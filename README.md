@@ -46,7 +46,8 @@ pip3 install django gunicorn psycopg2-binary
 intsall or copy Django project with dependencies in ~/<project_env>/<project_name>/
 
 # Adjusting project settings
-* settings.py
+
+settings.py
 '''python
 import os
 from pathlib import Path
@@ -243,7 +244,7 @@ sudo systemctl restart gunicorn
 
 # Configuring Nginx
 sudo nano /etc/nginx/sites-available/<project_name>
-# =========== /etc/nginx/sites-available/<project_name> ===================== #
+'''bash
 server {
  
 listen 80;
@@ -279,13 +280,4 @@ root /home/<username>/<project_env>/<project_name>;
 }
   
 }
-# ============== end /etc/nginx/sites-available/<project_name> ================= #
-
-	
-sudo ln -s /etc/nginx/sites-available/<project_name> /etc/nginx/sites-enabled
-sudo nginx -t
-sudo systemctl restart nginx
-
-sudo ufw delete allow 8000
-sudo ufw allow 'Nginx Full'
-sudo ufw status
+'''
