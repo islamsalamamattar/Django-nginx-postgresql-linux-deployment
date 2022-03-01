@@ -19,13 +19,13 @@ sudo apt install python3-pip python3-dev libpq-dev postgresql postgresql-contrib
 
 sudo -u postgres psql
 	
-CREATE DATABASE database;
-CREATE USER admin WITH PASSWORD 'db@123';
-ALTER ROLE admin SET client_encoding TO 'utf8';
-ALTER ROLE admin SET default_transaction_isolation TO 'read committed';
-ALTER ROLE admin SET timezone TO 'UTC';
-GRANT ALL PRIVILEGES ON DATABASE database TO admin;
-\q
+> CREATE DATABASE database;
+> CREATE USER admin WITH PASSWORD 'db@123';
+> ALTER ROLE admin SET client_encoding TO 'utf8';
+> ALTER ROLE admin SET default_transaction_isolation TO 'read committed';
+> ALTER ROLE admin SET timezone TO 'UTC';
+> GRANT ALL PRIVILEGES ON DATABASE database TO admin;
+> \q
 
 # Python Virtual Environment
 
