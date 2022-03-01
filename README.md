@@ -43,7 +43,7 @@ cd ~
 virtualenv <project_env>
 source <project_env>/bin/activate
 
-# install Django, Gunicorn, and psycopg2 (PostgreSQL adapter)
+## install Django, Gunicorn, and psycopg2 (PostgreSQL adapter)
 pip3 install django gunicorn psycopg2-binary
 
 
@@ -54,7 +54,9 @@ intsall or copy Django project with dependencies in ~/<project_env>/<project_nam
 # Adjusting project settings
 
 settings.py
-'''python
+
+
+'''
 import os
 from pathlib import Path
 
@@ -170,6 +172,7 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 SECURE_SSL_REDIRECT = True
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
+
 '''
 
 
