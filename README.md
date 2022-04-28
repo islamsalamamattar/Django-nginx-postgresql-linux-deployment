@@ -4,9 +4,9 @@
 Ubuntu 20.04 server configured with a basic firewall
 
 # Creating non-root user with sudo privilege
-adduser <username>
-usermod -aG sudo <username>  # add user to sudo group
-su - <username> #switch to user
+adduser admin
+usermod -aG sudo admin # add user to sudo group
+su - admin #switch to user
 
 sudo ls -la /root  #test sudo previlages 
 
