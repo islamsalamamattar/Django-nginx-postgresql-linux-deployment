@@ -222,10 +222,10 @@ Requires=gunicorn.socket
 After=network.target
  
 [Service]
-User=<user>
-Group=<user>
-WorkingDirectory=/home/<username>/<project_env>/<project_name>
-ExecStart=/home/<username>/<project_env>/bin/gunicorn \
+User=admin
+Group=<admin
+WorkingDirectory=/home/admin/env/<project_name>
+ExecStart=/home/admin/env/bin/gunicorn \
           --access-logfile - \
           --workers 3 \
           --bind unix:/run/gunicorn.sock \
@@ -285,7 +285,7 @@ location / {
 location = /favicon.ico { access_log off; log_not_found off; }
  
 location /static/ {
-root /home/<username>/<project_env>/<project_name>;
+root /home/admin/env/<project_name>;
 }
   
 }
