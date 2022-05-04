@@ -13,6 +13,7 @@ sudo ls -la /root  #test sudo previlages
 # Installing the Necessary Packages
 
 sudo apt update
+sudo apt upgrade
 sudo apt install python3-pip python3-dev libpq-dev postgresql postgresql-contrib nginx curl
 
 # PostgreSQL Database and User	
