@@ -1,4 +1,3 @@
-```markdown
 # Setting up Django with PostgreSQL, Nginx, and Gunicorn on Ubuntu 20.04
 =========================================================================
 
