@@ -4,7 +4,8 @@
 Ubuntu 20.04 server configured with a basic firewall
 
 # Creating non-root user with sudo privilege
-'''
+
+'''python
 adduser admin
 usermod -aG sudo admin # add user to sudo group
 su - admin #switch to user
