@@ -1,7 +1,7 @@
-# Setting up Django with PostgreSQL, Nginx, and Gunicorn on Ubuntu 20.04
+## Setting up Django with PostgreSQL, Nginx, and Gunicorn on Ubuntu 20.04
 =========================================================================
 
-Ubuntu 20.04 server configured with a basic firewall.
+### Ubuntu 20.04 server configured with a basic firewall.
 
 ## Creating non-root user with sudo privilege
 
