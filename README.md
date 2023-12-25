@@ -1,12 +1,9 @@
-Certainly! Below is the reformatting of the provided content in Markdown format suitable for a `readme.md` file on a GitHub repo:
-
-```markdown
-# Setting up Django with PostgreSQL, Nginx, and Gunicorn on Ubuntu 20.04
+## Setting up Django with PostgreSQL, Nginx, and Gunicorn on Ubuntu 20.04
 =========================================================================
 
-Ubuntu 20.04 server configured with a basic firewall.
+## Ubuntu 20.04 server configured with a basic firewall.
 
-## Creating non-root user with sudo privilege
+### Creating non-root user with sudo privilege
 
 ```bash
 adduser admin
@@ -16,7 +13,7 @@ su - admin #switch to user
 sudo ls -la /root  #test sudo privileges
 ```
 
-## Installing the Necessary Packages
+### Installing the Necessary Packages
 
 ```bash
 sudo apt update
@@ -24,7 +21,7 @@ sudo apt upgrade
 sudo apt install python3-pip python3-dev libpq-dev postgresql postgresql-contrib nginx curl
 ```
 
-## PostgreSQL Database and User
+### PostgreSQL Database and User
 
 ```bash
 sudo -u postgres psql
@@ -38,22 +35,24 @@ sudo -u postgres psql
 > \q
 ```
 
-## Python Virtual Environment
+### Python Virtual Environment
 
 ```bash
 sudo -H pip3 install --upgrade pip
 sudo -H pip3 install virtualenv
-
-# create a virtual environment
+```
+### create a virtual environment
+```bash
 cd ~
 virtualenv <project_env>
 source <project_env>/bin/activate
-
-# install Django, Gunicorn, and psycopg2 (PostgreSQL adapter)
+```
+### install Django, Gunicorn, and psycopg2 (PostgreSQL adapter)
+```bash
 pip3 install django gunicorn psycopg2-binary
 ```
 
-## Django project
+### Django project
 
 Install or copy Django project with dependencies in `~/<project_env>/<project_name>/`
 
