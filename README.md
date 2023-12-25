@@ -4,7 +4,7 @@
 Ubuntu 20.04 server configured with a basic firewall
 
 # Creating non-root user with sudo privilege
-'''code
+'''
 adduser admin
 usermod -aG sudo admin # add user to sudo group
 su - admin #switch to user
@@ -13,7 +13,7 @@ sudo ls -la /root  #test sudo previlages
 '''
 
 # Installing the Necessary Packages
-'''code
+'''
 sudo apt update
 sudo apt upgrade
 sudo apt install python3-pip python3-dev libpq-dev postgresql postgresql-contrib nginx curl
@@ -21,7 +21,7 @@ sudo apt install python3-pip python3-dev libpq-dev postgresql postgresql-contrib
 
 # PostgreSQL Database and User	
 
-'''code
+'''
 sudo -u postgres psql
 	
 > CREATE DATABASE database;
