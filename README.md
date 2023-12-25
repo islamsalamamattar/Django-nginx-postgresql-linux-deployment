@@ -1,5 +1,3 @@
-Certainly! Below is the reformatting of the provided content in Markdown format suitable for a `readme.md` file on a GitHub repo:
-
 ```markdown
 # Setting up Django with PostgreSQL, Nginx, and Gunicorn on Ubuntu 20.04
 =========================================================================
